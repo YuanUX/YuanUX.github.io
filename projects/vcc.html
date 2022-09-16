@@ -16,8 +16,8 @@
       gtag('config', 'G-W4ZTZGZZG6');
     </script>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Virtual Color Consultation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Consultation</title>
 
     <link
       rel="stylesheet"
@@ -31,11 +31,22 @@
       type="text/css"
       href="../assets/css/components.css"
     />
+
+    <link rel="stylesheet" href="../assets/css/swiper.min.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css"
+    />
   </head>
 
   <body>
     <!-- this is next button -->
-    <a class="next-post" href="./bubble.html">
+    <a
+      class="next-post"
+      href="https://yuanyuanhu96.github.io/projects/lexio.html"
+    >
       N
       <br />
       E <br />
@@ -49,21 +60,29 @@
     <div class="top-nav" id="navbar">
       <div class="container clearf">
         <div class="fl">
-          <a href="../index.html"
+          <a href="https://yuanyuanhu96.github.io/index.html"
             ><img src="../assets/img/general/logo.svg" alt="" width="32"
-          /></a>
-          <a href="../index.html">
-            <img src="../img/post/back.svg" alt="" width="30"
           /></a>
         </div>
 
         <div class="fr">
-          <a class="item" href="../index.html">Projects</a>
-          <a class="item" href="../methods.html">Tools</a>
+          <a class="item" href="https://yuanyuanhu96.github.io/index.html"
+            >Projects</a
+          >
 
-          <a class="item" href="../about.html">About</a>
+          <a class="item" href="https://yuanyuanhu96.github.io/methods.html"
+            >Tools</a
+          >
+          <a class="item" href="https://yuanyuanhu96.github.io/about.html"
+            >About</a
+          >
 
-          <a class="item" href="../resume-hu.pdf" target="_blank">Resume</a>
+          <a
+            class="item"
+            href="https://yuanyuanhu96.github.io/resume-hu.pdf"
+            target="_blank"
+            >Resume</a
+          >
         </div>
       </div>
     </div>
@@ -82,7 +101,7 @@
             Sherwin Williams and pushed the business to reach its customer in a
             never-happened way. Virtual color consultation is a new service for
             those DIYers to find the color they want and for Sherwin to find
-            growth through digital channels. This service serves 80% of the
+            growth through digital channels. This service serves 80% of
             first-time customers, and their average order value is twice as many
             others.
           </p>
@@ -91,156 +110,404 @@
           <h3>Team</h3>
           <p>
             Steve Swidarski - Product Owner <br />
-            Katie Sloma - Experience Direction <br />
-            Rama Rayana - UI design <br />
-            Alex Esposito - Creative Writing<br />
-            Yuanyuan Hu - UX design<br />
+            Katie Sloma - Creative Director <br />
+            Yuanyuan Hu - Experience Designer<br />
+            Alex Esposito - Copy Writer<br />
+            Ben Daugherty - Business Analyst <br />
           </p>
         </section>
       </div>
     </div>
 
     <div class="container padding-l no-grid">
-      <h3>User Needs</h3>
-      <h1>Color is fun but can be overwhelming.</h1>
+      <div>
+        <h3>User Needs</h3>
+        <h1>Color is fun but can be overwhelming.</h1>
+      </div>
+
       <img alt="Git Bash" src="../assets/img/vcc/user.jpeg" width="100%" />
       <p>
-        Homeowners need to be able to connect with an expert on their terms who
-        can guide them in translating what’s “in their head,” validating their
-        choices and helping them “see it” in their space so they can make a
-        final color decision.
+        Sherwin-Williams provides 3000+ colors that you can choose from. That's
+        awesome but also are way too many options for a single person to choose
+        from. We deeply understood DIYers' need for color guidance and provides
+        many self-service color tools under the Color Snap brand. However, the
+        human-to-human interaction is always warmer and more efficient that we
+        never want to lose.
+      </p>
+
+      <p>
+        These days, people cannot walk directly into Sherwin store and talk to
+        our store members as usual, but they still need to be able to connect
+        with an expert on their terms who can guide them in translating what’s
+        “in their head,” validating their choices and helping them “see it” in
+        their space so they can make a final color decision. It becomes
+        extremely important for us to connect with our customers online.
       </p>
     </div>
 
     <div class="container padding-l no-grid">
-      <h3>Business Needs</h3>
-      <h1>
-        Guide DIY customers end-to-end from Inspiration to completed projects
-        beyond the store.
-      </h1>
+      <div>
+        <h3>Business Needs</h3>
+        <h1>
+          Guide DIY customers end-to-end from Inspiration to completed projects
+          beyond the store.
+        </h1>
+      </div>
 
       <img alt="Git Bash" src="../assets/img/vcc/business.png" width="100%" />
       <p>
-        Provide a best-in-class virtual color and paint consultation experience
-        that helps DIYers choose paint for their projects because extending
-        S-W’s trademark expertise and personalized support beyond the store can
-        inspire more people to tackle their projects with S-W.
+        Beyond just helping choose color, DIYers usually do the project for the
+        first time. Inspiration, color samples, comparing products - there is a
+        lot that our consultant can do. Through this project, we provide a
+        best-in-class virtual color and paint consultation experience that helps
+        DIYers choose paint for their projects because extending S-W’s trademark
+        expertise and personalized support beyond the store can inspire more
+        people to tackle their projects with S-W.
       </p>
     </div>
 
+    <div class="padding-l">
+      <div class="container padding-l no-grid">
+        <div>
+          <h3>Central Question</h3>
+          <h1>
+            How might we offer a more personalized, confidence-building, and
+            action-inspiring consultation experience?
+          </h1>
+        </div>
+
+        <p>
+          In order to quickly hit the market, we have little time to do the
+          research, so we decided to have a co-creation workshop with DIYers,
+          color consultants, and other Sherwin employees to understand the
+          needs, goals, and constraints. Since that workshop, we got clearer
+          what an ideal experience should be, but the goal should be achieved
+          step by step.
+        </p>
+      </div>
+      <div>
+        <div class="p-full-width">
+          <img
+            alt="Git Bash"
+            src="../assets/img/vcc/ideating.jpg"
+            width="100%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="padding-l">
+      <div class="container padding-l no-grid">
+        <div>
+          <h3>First Release</h3>
+          <h1>
+            An end-to-end service where users can easily request a consultation,
+            meet with consultants and get tailored color and project
+            recommendations.
+          </h1>
+        </div>
+
+        <p>
+          For the first release, we used a few out-of-shelf solutions like
+          Microsoft Booking, Teams, and Sherwin Color Visualizer. That
+          definitely isn't the "ideal states" from a UX perspective, but from
+          the business perspective, the real goal of this release is to meet
+          customers as soon as we can and to see how they will react. A few
+          months later we already knew how much the customers love the service.
+          The success encourages Sherwin to invest more, bring the service to a
+          larger scale, and take the whole experience to the next level.
+        </p>
+      </div>
+
+      <div>
+        <div class="p-scale-width">
+          <div class="grid-of-three">
+            <section>
+              <h4>Registering</h4>
+
+              <p style="height: 6em">
+                Without needing to log in, the user just needs to fill the
+                request form on the VCC landing page.
+              </p>
+              <img
+                alt="Git Bash"
+                src="../assets/img/vcc/journey-1.png"
+                width="100%"
+              />
+            </section>
+
+            <section>
+              <h4>Scheduling</h4>
+              <p style="height: 6em">
+                Email sent to the user for scheduling and for gathering project
+                information.
+              </p>
+              <img
+                alt="Git Bash"
+                src="../assets/img/vcc/journey-2.png"
+                width="100%"
+              />
+            </section>
+
+            <section>
+              <h4>Consultation</h4>
+              <p style="height: 6em">
+                According to users' needs, the consultant will recommend colors
+                and send follow-up emails using templates.
+              </p>
+              <img
+                alt="Git Bash"
+                src="../assets/img/vcc/journey-3.png"
+                width="100%"
+              />
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="padding-l">
+      <div class="container padding-l no-grid">
+        <div>
+          <h3>Key Moment</h3>
+          <h1>Request for a color consultation.</h1>
+        </div>
+      </div>
+
+      <div class="p-scale-width">
+        <h3 style="text-align: center">Landing Page</h3>
+
+        <img alt="Git Bash" src="../assets/img/vcc/landing.png" width="100%" />
+        <h3 style="text-align: center">Confirmation</h3>
+
+        <img
+          alt="Git Bash"
+          src="../assets/img/vcc/confirmation.png"
+          width="100%"
+        />
+        <h3 style="text-align: center">Account Creation</h3>
+
+        <img alt="Git Bash" src="../assets/img/vcc/account.png" width="100%" />
+      </div>
+    </div>
+
+    <div class="padding-l">
+      <div class="container padding-l no-grid">
+        <div>
+          <h3>Highlight 1</h3>
+          <h1>
+            Encourage customers to take action - Prioritize form and increase
+            information density.
+          </h1>
+        </div>
+        <p>
+          I found that users can easily understand what virtual color
+          consultation is and what they want to do on this landing page is to
+          submit their requests. So I chose the option with higher information
+          density. Users don't need to scroll down to know what they can do but
+          understand at the first glance. I also broke the form into two steps -
+          contact information and project information, so that users will not be
+          overwhelmed by the text fields they need to finish.
+        </p>
+        <img
+          alt="Git Bash"
+          src="../assets/img/vcc/test-process.png"
+          width="50%"
+        />
+      </div>
+
+      <div>
+        <div class="p-scale-width">
+          <img
+            class="align-center"
+            alt="Git Bash"
+            src="../assets/img/vcc/testing.png"
+            width="100%"
+          />
+        </div>
+      </div>
+      <!-- <div>
+        <div class="p-full-width">
+          <div class="before-after">
+            <section class="p-before">
+              <h3 class="align-center">Before</h3>
+              <br />
+
+              <img
+                class="align-center"
+                alt="Git Bash"
+                src="../assets/img/vcc/landing-b.png"
+                width="80%"
+              />
+            </section>
+            <section class="p-after">
+              <h3 class="align-center">After</h3>
+              <br />
+
+              <img
+                class="align-center"
+                alt="Git Bash"
+                src="../assets/img/vcc/landing-a.png"
+                width="80%"
+              />
+            </section>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="padding-l">
+      <div class="container padding-l no-grid">
+        <div>
+          <h3>Highlight 2</h3>
+          <h1>
+            Keep the connection and offer more - embedded account creation
+            model.
+          </h1>
+        </div>
+        <p>
+          Helping people choose the right color is important, equally important
+          is to keep the connection and to offer more. So I designed the simple
+          login modal. Using the information they already filled in, just add
+          one more step to set up the password. I referred to the existing login
+          page and redesigned that with our new DIY language while fixing some
+          existing usability issues.
+        </p>
+      </div>
+
+      <div>
+        <div class="p-full-width">
+          <div class="before-after">
+            <section class="p-before">
+              <h3 class="align-center">Before</h3>
+              <br />
+
+              <img
+                class="align-center"
+                alt="Git Bash"
+                src="../assets/img/vcc/signup-b.png"
+                width="100%"
+              />
+            </section>
+            <section class="p-after">
+              <h3 class="align-center">After</h3>
+              <br />
+
+              <img
+                class="align-center"
+                alt="Git Bash"
+                src="../assets/img/vcc/signup-a.png"
+                width="100%"
+              />
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container padding-l no-grid">
-      <h3>Central Question</h3>
-      <h1>
-        How might we offer a more personalized, confidence-building, and
-        action-inspiring consultation experience?
-      </h1>
+      <div>
+        <h3>Results</h3>
+        <h1>
+          20,000+ consultation finished. <br />
+          80% new customers. <br />Twice average order value as that of others.
+        </h1>
+      </div>
+      <img alt="Git Bash" src="../assets/img/vcc/timeline.png" width="100%" />
+      <img alt="Git Bash" src="../assets/img/vcc/quote.png" width="100%" />
+    </div>
+    <div class="container padding-l no-grid">
+      <div>
+        <h3>What is next</h3>
+        <h1>
+          A fully connected and streamlined experience for both DIYers and
+          consultants.
+        </h1>
+      </div>
+      <img alt="Git Bash" src="../assets/img/vcc/blueprint.png" width="100%" />
+
+      <!-- <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img alt="Git Bash" src="../assets/img/vcc/blueprint.png" />
+          </div>
+          <div class="swiper-slide">
+            <img alt="Git Bash" src="../assets/img/vcc/blueprint.png" />
+          </div>
+          <div class="swiper-slide">
+            <img alt="Git Bash" src="../assets/img/vcc/blueprint.png" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div> -->
       <p>
-        We did co-creation workshops with stakeholders to get inspiration and to
-        understand the constraints.
+        The quick launch helped us learn a lot especially how much people love
+        this new service, so we want to scale this success. I have been
+        researching and designing the consultant and admin experience. We will
+        automate most manual work for the consultants, build the data pipeline
+        for real-time scheduling and lead generation. For DIYers, they can get
+        consultation right away, play with color in the project space, go back
+        to their consultant, and buy products in one click.
       </p>
     </div>
-    <div class="p-full-width">
-      <img alt="Git Bash" src="../assets/img/vcc/ideating.png" width="100%" />
-    </div>
 
-    <div class="p-full-width">
-      <img alt="Git Bash" src="../assets/img/vcc/solution.png" width="100%" />
-      <img alt="Git Bash" src="../assets/img/vcc/flow.png" width="100%" />
-    </div>
-
-    <div class="container padding-l no-grid">
-      <h3>Challenge 1</h3>
-      <h1>Encourage customers to take action</h1>
-      <!-- <p>
-        This is fake content This is fake contentThis is fake contentThis is
-        fake contentThis is fake contentThis is fake contentThis is fake
-        contentThis is fake contentThis is fake contentThis is fake contentThis
-      </p> -->
-    </div>
-    <div class="p-full-width">
-      <div class="grid-of-two">
-        <section class="p-before">
-          <br />
-          <h3 class="align-center p-before">Before</h3>
-          <img
-            alt="Git Bash"
-            src="../assets/img/vcc/landing-before.png"
-            width="100%"
-          />
-        </section>
-        <section class="p-full-width">
-          <br />
-
-          <h3 class="align-center p-before">After</h3>
-
-          <img
-            alt="Git Bash"
-            src="../assets/img/vcc/landing-after.png"
-            width="100%"
-          />
-        </section>
+    <div class="padding-l">
+      <div class="container padding-l no-grid">
+        <div>
+          <h3>Service Back-stage</h3>
+          <h1>
+            Designed the E2E Consultant & Admin workflow for the service to
+            scale.
+          </h1>
+        </div>
+        <p>
+          In this project, I got the experience of working on a large-scale
+          service, that is backed by hundreds of consultants. It amazed me that
+          how much can a consultant provide during a 30 minutes consultation. As
+          a designer, I constantly consider what their talent is and what we can
+          optimize, so we can provide the right tools that
+          facilitate human-to-human interactions and help customers achieve
+          their goals, and build trust for our brand.
+        </p>
+      </div>
+      <div class="p-scale-width">
+        <img alt="Git Bash" src="../assets/img/vcc/map.png" width="100%" />
       </div>
     </div>
 
     <div class="container padding-l no-grid">
-      <h3>Challenge 2</h3>
-      <h1>Connect to core</h1>
-      <!-- <p>
-        This is fake content This is fake contentThis is fake contentThis is
-        fake contentThis is fake contentThis is fake contentThis is fake
-        contentThis is fake contentThis is fake contentThis is fake contentThis
-      </p> -->
-    </div>
-    <div class="p-full-width">
-      <img alt="Git Bash" src="../assets/img/vcc/profile.png" width="100%" />
-    </div>
+      <div>
+        <h3>Service Front-stage</h3>
+        <h1>
+          Collective efforts make real-time scheduling and collaborative project
+          to be true.
+        </h1>
+      </div>
 
-    <div class="container padding-l no-grid">
-      <h3>Challenge 3</h3>
-      <h1>Implementing design system</h1>
-      <!-- <p>
-        This is fake content This is fake contentThis is fake contentThis is
-        fake contentThis is fake contentThis is fake contentThis is fake
-        contentThis is fake contentThis is fake contentThis is fake contentThis
-      </p> -->
-    </div>
-    <div class="p-full-width">
-      <div class="grid-of-two">
-        <section class="p-before">
-          <br />
-          <h3 class="align-center">Before</h3>
-          <img
-            alt="Git Bash"
-            src="../assets/img/vcc/signup-before.png"
-            width="100%"
-          />
-        </section>
-        <section class="p-full-width">
-          <br />
+      <div class="grid-one-two">
+        <img alt="Git Bash" src="../assets/img/vcc/vcc.gif" width="95%" />
 
-          <h3 class="align-center">After</h3>
-          <img
-            alt="Git Bash"
-            src="../assets/img/vcc/signup-after.png"
-            width="100%"
-          />
+        <section style="padding-left: 30px">
+          <br />
+          <br />
+          <p>
+            Real-time scheduling is the capabilities we envisioned from day one.
+            It will drastically shorten customers' waiting time, relieve the
+            admin's from manual assigning work, enable the service to expand to
+            a larger scale, save consultants time in logistics... However, that
+            means investment and internal workflow shifts.
+          </p>
+
+          <p>
+            With the great success from the last release, our efforts
+            demonstrate the value, and most importantly many stakeholders' hard
+            work. real-time scheduling and project integration is coming true!
+          </p>
         </section>
       </div>
-    </div>
-
-    <div class="container padding-l no-grid">
-      <h1>Results</h1>
-
-      <img alt="Git Bash" src="../assets/img/vcc/result.png" width="100%" />
-    </div>
-    <div class="container no-grid">
-      <h3>Beyond</h3>
-      <h1>Consultant Experience & realtime scheduling</h1>
-      <br />
-    </div>
-    <div class="p-full-width">
-      <img alt="Git Bash" src="../assets/img/vcc/overall.png" width="100%" />
-      <img alt="Git Bash" src="../assets/img/vcc/scheduling.png" width="100%" />
     </div>
 
     <div class="container">
@@ -271,14 +538,27 @@
       </footer>
     </div>
     <script src="../assets/js/nav.js"></script>
-
-    <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
-    <script src="../js/post.js" type="text/javascript"></script>
-    <script src="../js/jquery-1.8.3.min.js"></script>
-    <script src="../js/jquery.nav.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $('#nav').onePageNav();
+      var mySwiper = new Swiper('.swiper-container', {
+        //direction: 'vertical', // 垂直切换选项
+        loop: false, // 循环模式选项
+
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
       });
     </script>
   </body>
