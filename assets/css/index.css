@@ -693,7 +693,7 @@ button.swipe-overlay-light {
 }
 
 .bg-naas {
-  background-color: #1E4F70;
+  background-color: #333c46;
   cursor: default;
 }
 
@@ -706,7 +706,7 @@ button.swipe-overlay-light {
 }
 
 .bg-pro {
-  background-color: #373738;
+  background-color: #2f80ed;
   cursor: default;
 }
 
@@ -718,7 +718,7 @@ button.swipe-overlay-light {
   color: white;
 }
 .bg-vcc {
-  background-color: #5c6450;
+  background-color: #333c46;
 }
 
 .bg-vcc > .grid-of-two > .card-img {
@@ -726,11 +726,11 @@ button.swipe-overlay-light {
 }
 
 .bg-vcc > .card-text > * {
-  color: white;
+  color: black;
 }
 
 .bg-lexio {
-  background-color: #009edb;
+  background-color: #2f80ed;
 }
 
 .bg-lexio > .grid-of-two > .card-img {
@@ -764,7 +764,7 @@ button.swipe-overlay-light {
 }
 
 .bg-nokia {
-  background-color: #183693;
+  background-color: #333c46;
 }
 
 .bg-nokia > .grid-of-two > .card-img {
@@ -786,7 +786,7 @@ button.swipe-overlay-light {
 }
 
 .bg-ticket {
-  background-color: #373738;
+  background-color: #333c46;
 }
 
 .bg-ticket > .grid-of-two > .card-img {
@@ -816,7 +816,7 @@ button.swipe-overlay-light {
 }
 
 .bg-yf {
-  background-color: #2374fb;
+  background-color: #2f80ed;
 }
 
 .bg-yf > .grid-of-two > .card-img {
