@@ -1,0 +1,54 @@
+.container {
+  overflow: hidden;
+}
+
+.tool-card {
+  background-color: #ffffff;
+  color: #000;
+  padding: 20px 10px;
+  margin: 40px 10px;
+  display: none; /* Hidden by default */
+  box-shadow: 0 2px 10px #f9f9fb;
+  border-radius: 2px;
+}
+
+.tool-descripion {
+}
+
+.tool-source {
+  margin-top: 10px;
+  font-size: 14px;
+
+  bottom: 10px;
+  left: 30px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: solid;
+  border-width: 1px;
+  outline: none;
+  padding: 10px 14px;
+  color: #050042;
+  border-color: #050042;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 3px 3px;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #f9f9fb;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #050042;
+  color: white;
+}
