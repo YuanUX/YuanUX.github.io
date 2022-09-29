@@ -545,8 +545,8 @@ button.swipe-overlay-light {
 }
 
 .intro {
-  padding: 60px 0;
-  min-height: 400px;
+  padding-top: 32px;
+  min-height: 300px;
   line-height: 150px;
 }
 
@@ -557,9 +557,9 @@ button.swipe-overlay-light {
 
 .flavor {
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   right: 0;
-  max-height: 360px;
+  max-height: 300px;
   z-index: -1;
 }
 
@@ -570,6 +570,10 @@ button.swipe-overlay-light {
     z-index: -1;
     opacity: 100%;
     bottom: -40px;
+  }
+
+  .intro {
+    padding-bottom: 48px;
   }
 }
 
