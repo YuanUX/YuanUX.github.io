@@ -148,7 +148,7 @@ audio:not([controls]),
 }
 
 body {
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   /* font-family: Helvetica, Tahoma, Arial, 'Hiragino Sans GB', '\51AC\9752\9ED1\4F53', 'Microsoft YaHei', '\5FAE\8F6F\96C5\9ED1', STXihei, '\534E\6587\7EC6\9ED1', SimSun, '\5B8B\4F53', Heiti, '\9ED1\4F53', sans-serif; */
   font-size: 16px;
 }
@@ -382,7 +382,7 @@ a.NaviProject:hover {
   margin-bottom: 25px;
   /* border-bottom: 2px solid #eee; */
   padding-bottom: 10px;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
 }
 
 .post-wrapper h2 .number {
@@ -399,7 +399,7 @@ a.NaviProject:hover {
   font-weight: 700;
   margin-bottom: 25px;
   color: #000;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
 }
 
 @media screen and (max-width: 767px) {
@@ -745,7 +745,7 @@ p,
 .post-wrapper li {
   font-style: normal;
   font-size: 18px;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   font-weight: 380;
   text-transform: none;
   line-height: 1.625;

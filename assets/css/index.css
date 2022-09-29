@@ -5,7 +5,7 @@
 
 body {
   color: black;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-size: 1.125em;
   font-weight: 400;
@@ -24,7 +24,7 @@ a {
 h1 {
   font-style: normal;
   font-size: 40px;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   text-transform: none;
   line-height: 1.5;
@@ -37,7 +37,7 @@ h2 {
   color: inherit;
   font-style: normal;
   font-size: 34px;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   text-transform: none;
   line-height: 1.5;
@@ -62,7 +62,7 @@ img {
     padding: 10px 15px;
   }
   h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
   h2 {
     font-size: 28px;
@@ -163,11 +163,6 @@ img {
   width: 100%;
   transition: 600ms;
   transition-timing-function: ease;
-}
-
-.header {
-  padding: 120px 50px 2px 50px;
-  width: 100%;
 }
 
 .top-nav {
@@ -395,7 +390,7 @@ mark {
   margin-bottom: 60px;
   font-style: normal;
   font-size: 26px;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-transform: none;
   line-height: 1.5;
@@ -421,7 +416,7 @@ mark {
 .headline {
   font-style: normal;
   font-size: 48px;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: none;
   line-height: 1.5;
@@ -453,7 +448,7 @@ button.swipe-overlay {
   border-width: 2px;
   border-style: solid;
   font-size: 20px;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   cursor: pointer;
   /* transition: 0.25s ease; */
   color: #050042;
@@ -495,7 +490,7 @@ button.swipe-overlay {
   border-width: 2px;
   border-style: solid;
   font-size: 20px;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   cursor: pointer;
   /* transition: 0.25s ease; */
   color: #050042;
@@ -537,24 +532,44 @@ button.swipe-overlay-light {
   border-width: 2px;
   border-style: solid;
   font-size: 20px;
-  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   cursor: pointer;
   /* transition: 0.25s ease; */
   color: #fff;
   border-color: #fff;
   background: transparent;
 }
-.index-header {
-  display: grid;
-  grid-template-columns: 7fr 3fr;
+
+.header {
+  position: relative;
+}
+
+.intro {
+  padding: 60px 0;
+  min-height: 400px;
+  line-height: 150px;
+}
+
+.intro h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.flavor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: 360px;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 800px) {
-  .index-header {
-    grid-template-columns: 1fr;
-  }
-  .index-header > .flavor {
-    padding: 0 100px;
+  .flavor {
+    max-height: none;
+    max-width: 200px;
+    z-index: -1;
+    opacity: 100%;
+    bottom: -40px;
   }
 }
 
@@ -637,6 +652,10 @@ button.swipe-overlay-light {
 }
 
 .mid-align > * {
+  position: relative;
+}
+
+.card-text > .mid-align > * {
   color: #fff;
   position: relative;
   top: -30px;
