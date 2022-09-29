@@ -30,44 +30,44 @@
 
   <body>
     <div class="top-nav" id="navbar">
-      <div class="container clearf">
-        <div class="fl">
-          <a href="./index.html"
-            ><img src="./assets/img/general/logo.svg" alt="" width="32"
-          /></a>
-        </div>
+      <div class="container">
+        <a class="home" href="./index.html"
+          ><img src="./assets/img/general/logo.svg" alt="" width="32"
+        /></a>
 
-        <div class="fr">
+        <div class="tabs">
           <a class="item" href="./index.html">Projects</a>
-          <a class="item" href="./methods.html">Tools</a>
 
-          <a class="item" href="./about.html">About</a>
-          <a class="item" href="resume-hu.pdf" target="_blank">Resume</a>
+          <a class="item" href="./methods.html">Methods</a>
+
+          <a class="item" href="./resume-hu.pdf" download="">
+            <span>
+              <img alt="" src="./assets/img/index/download.svg" width="18px" />
+              <div>Resume</div></span
+            >
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="container padding-left-30 padding-right-30">
-      <br />
+    <div class="container">
       <br />
       <br />
       <br />
 
-      <div class="align-center">
+      <div class="header">
         <h1>Welcome to Yuanyuan's design toolbox!</h1>
 
         <p class="larger">
           This is a place where I reflect on and share what I learned about
-          design,
-          <br />
-          it's just a beginning and more will come :)
+          design. It's just a beginning and more will come :)
         </p>
 
         <br />
       </div>
 
       <!-- Control buttons -->
-      <div id="myBtnContainer" class="align-center">
+      <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')">
           Show all
         </button>
@@ -89,7 +89,7 @@
       </div>
       <br />
       <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-      <div class="container">
+      <div>
         <div class="tool-card process">
           <div class="grid-of-two">
             <section>

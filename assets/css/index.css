@@ -18,7 +18,7 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
-  color: #050042;
+  color: #000;
 }
 
 h1 {
@@ -165,26 +165,49 @@ img {
   transition-timing-function: ease;
 }
 
+html:not([data-scroll='0']) .top-nav {
+  position: fixed;
+  top: 0;
+}
+
 .top-nav {
+  position: fixed;
   width: 100%;
-  transition: 600ms;
-  transition-timing-function: ease;
+  transition: 1000ms;
   background: white;
   backdrop-filter: blur(10px);
-
-  position: fixed;
   z-index: 5555;
   border-bottom: rgba(255, 255, 255, 0.1) solid 1px;
 }
 
-.top-nav .item {
-  margin: 0 8px;
-  padding: 2px 0;
+.top-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav .container a {
+  height: fit-content;
+}
+
+.top-nav > .container > .tabs > a {
+  margin-left: 10px;
+}
+
+.contact {
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.item {
+  padding: 2px 8px;
   display: inline-block;
   color: black;
   font-size: 18px;
   /* font-weight: 600; */
   text-decoration: none;
+  border-radius: 2px;
 }
 
 .top-nav .current {
@@ -193,9 +216,10 @@ img {
   border-bottom-width: 3px;
 }
 
-.top-nav .item:hover {
+.item:hover {
   color: #413f53;
   transition: color 200ms;
+  background-color: #f9f9fb;
 }
 
 .top-nav {
@@ -398,10 +422,6 @@ mark {
   -webkit-font-smoothing: antialiased;
 }
 
-.larger {
-  font-size: 20px;
-}
-
 .intext-link {
   font-style: italic;
 
@@ -442,18 +462,22 @@ button > span {
   z-index: 1;
 }
 button.swipe-overlay {
-  margin: 40px 0;
   padding: 10px 20px;
   border-radius: 2px;
   border-width: 2px;
   border-style: solid;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   cursor: pointer;
   /* transition: 0.25s ease; */
-  color: #050042;
-  border-color: #050042;
+  color: #000;
+  border-color: #000;
   background: transparent;
+}
+
+button.swipe-overlay > span > img {
+  filter: invert(3%) sepia(95%) saturate(3964%) hue-rotate(233deg)
+    brightness(105%) contrast(106%);
 }
 
 button.swipe-overlay::after {
@@ -461,14 +485,14 @@ button.swipe-overlay::after {
   position: absolute;
   top: 0;
   left: 0;
-  background: #050042;
+  background: #000;
   width: 150%;
   padding-top: 150%;
   transition: 0.25s ease;
 }
 
 button.swipe-overlay::after {
-  transform: rotate(25deg);
+  transform: rotate(45deg);
   top: -100%;
   left: -190%;
 }
@@ -480,6 +504,12 @@ button.swipe-overlay {
 button.swipe-overlay:hover {
   color: #fff;
 }
+
+button.swipe-overlay:hover > span > img {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(47deg)
+    brightness(117%) contrast(117%);
+}
+
 button.swipe-overlay:hover:after {
   left: -30%;
 }
@@ -489,12 +519,12 @@ button.swipe-overlay {
   border-radius: 2px;
   border-width: 2px;
   border-style: solid;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   cursor: pointer;
   /* transition: 0.25s ease; */
-  color: #050042;
-  border-color: #050042;
+  color: #000;
+  border-color: #000;
   background: transparent;
 }
 
@@ -520,7 +550,7 @@ button.swipe-overlay-light {
   overflow: hidden;
 }
 button.swipe-overlay-light:hover {
-  color: #050042;
+  color: #000;
 }
 button.swipe-overlay-light:hover:after {
   left: -30%;
@@ -531,7 +561,7 @@ button.swipe-overlay-light {
   border-radius: 2px;
   border-width: 2px;
   border-style: solid;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   cursor: pointer;
   /* transition: 0.25s ease; */
@@ -541,26 +571,7 @@ button.swipe-overlay-light {
 }
 
 .header {
-  position: relative;
-}
-
-.intro {
-  padding-top: 32px;
-  min-height: 300px;
-  line-height: 150px;
-}
-
-.intro h1 {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.flavor {
-  position: absolute;
-  bottom: -40px;
-  right: 0;
-  max-height: 300px;
-  z-index: -1;
+  max-width: 800px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -918,4 +929,16 @@ button.swipe-overlay-light {
 
 .a-lexio > * {
   color: #fff;
+}
+
+.convo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.item {
+  display: inline-flex;
+}
+span > * {
+  display: inline-block;
 }
