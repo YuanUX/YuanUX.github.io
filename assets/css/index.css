@@ -196,8 +196,13 @@ html:not([data-scroll='0']) .top-nav {
 
 .contact {
   position: relative;
+  left: -10px;
   align-items: center;
   display: flex;
+}
+
+.contact > * {
+  margin-right: 8px;
 }
 
 .item {
