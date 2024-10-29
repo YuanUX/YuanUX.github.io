@@ -709,7 +709,6 @@ button.swipe-overlay-light {
 .card-btn {
   background-color: rgba(255, 255, 255, 0);
   border-color: rgba(255, 255, 255, 0);
-  justify-self: end;
   font-weight: 600;
   position: relative;
 }
