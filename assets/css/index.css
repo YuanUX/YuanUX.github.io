@@ -731,6 +731,14 @@ button.swipe-overlay-light {
 
 
 
+.bg-AI {
+  background-color: #0A1D3A;
+}
+
+.bg-AI > .grid-of-two > .card-img {
+  background-image: url('../../assets/img/index/ai-logo.png');
+}
+
 .bg-sase {
   background-color: #0A1D3A;
 }
