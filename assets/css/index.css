@@ -851,6 +851,17 @@ button.swipe-overlay-light {
   color: white;
 }
 
+
+
+.bg-light {
+  background-color: #f9f9fb;
+}
+
+.bg-light > .card-text > * {
+  color: #000;
+}
+
+
 .bg-trip {
   background-color: #f9f9fb;
   background-image: url('../../assets/img/index/trip.png');
